@@ -1,0 +1,101 @@
+a, a:visited, a:link, a:active, a:hover {text-decoration: none;}
+/* GLOBAL */
+body {
+    background-color: #e9ecef;
+    margin: 0;
+}
+
+.body1, .navigare1, .continut1, .subsol1 {
+    transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.body1.theme-transition, .navigare1.theme-transition, .continut1.theme-transition, .subsol1.theme-transition {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1 {
+    font-family: "Quicksand";
+    font-size: clamp(0.75rem, 15vw, 5rem);
+    font-weight: 900;
+    text-align: center;
+    margin: 15px;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.48);
+}
+
+p {
+    margin: 0;
+    padding: 15px;
+}
+
+/* CUSTOM */
+#navigare {
+    font-family: "Quicksand";
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0px 10px 25px 10px #007bff8c;
+}
+
+#continut {
+    font-family: "Quicksand";
+    font-size: clamp(0.5rem, 5vw, 2rem);
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 0 10vw;
+    box-shadow: 9px 11px 23px 1px rgba(0,0,0,0.3);
+}
+
+#schimbatema {
+    background-color: #007bff;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 25px;
+}
+
+#linkuri {
+    display: flex;
+    align-items: center;
+}
+
+#linkuri a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    font-size: larger;
+    transition: all 0.2s ease-in;
+}
+
+#linkuri a:hover {
+    background-color: #007bffa1;
+    font-weight: 900;
+}
+
+#subsol {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 3px solid #007bff8c;
+    background: #f8f9fa;
+}
+
+#subsoltext {
+    font-family: "Quicksand";
+    font-size: clamp(0.5rem, 5vw, 1.5rem);
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#configurarilogo {
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: auto;
+}
