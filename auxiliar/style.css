@@ -10,7 +10,7 @@ h1 {
     font-weight: 900;
     text-align: center;
     margin: 15px;
-    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.48);
+    text-shadow: 3px 3px 15px #0000004d;
 }
   
 p {
@@ -39,7 +39,6 @@ p {
 #linkuri {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
   
 #linkuri a {
