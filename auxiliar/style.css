@@ -4,7 +4,7 @@ body {
     margin: 0;
     font-family: "Quicksand";
 }
-  
+
 h1 {
     font-size: clamp(0.75rem, 15vw, 5rem);
     font-weight: 900;
@@ -12,21 +12,21 @@ h1 {
     margin: 15px;
     text-shadow: 3px 3px 15px #0000004d;
 }
-  
+
 p {
     margin: 0;
     padding: 15px;
 }
-  
+
 /* CUSTOM */
- #navigare {
+#navigare {
     background-color: #f8f9fa;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the navigation links */
     padding: 10px;
     box-shadow: 0px 10px 25px 10px #007bff8c;
 }
-  
+
 #continut {
     font-size: clamp(0.5rem, 5vw, 2rem);
     text-align: center;
@@ -35,12 +35,12 @@ p {
     margin: 0 10vw;
     box-shadow: 9px 11px 23px 1px #0000004d;
 }
-  
+
 #linkuri {
     display: flex;
     align-items: center;
 }
-  
+
 #linkuri a {
     color: black;
     text-decoration: none;
@@ -48,8 +48,9 @@ p {
     margin-right: 10px;
     border-radius: 15px;
     font-size: larger;
+    transition: background-color 0.3s ease; /* Add transition effect */
 }
-  
+
 #linkuri a:hover {
     background-color: #007bff34;
     font-weight: 900;
