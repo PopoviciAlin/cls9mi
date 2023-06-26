@@ -6,11 +6,11 @@ body {
 }
 
 h1 {
-    font-size: clamp(0.75rem, 15vw, 5rem);
+    font-size: clamp(0.65rem, 15vw, 7rem);
     font-weight: 900;
     text-align: center;
     margin: 15px;
-    text-shadow: 3px 3px 15px #0000004d;
+    text-shadow: 3px 3px 20px #00000091;
 }
 
 p {
@@ -22,13 +22,13 @@ p {
 #navigare {
     background-color: #f8f9fa;
     display: flex;
-    justify-content: center; /* Center the navigation links */
+    justify-content: right;
     padding: 10px;
     box-shadow: 0px 10px 25px 10px #007bff8c;
 }
 
 #continut {
-    font-size: clamp(0.5rem, 5vw, 2rem);
+    font-size: clamp(1.5rem, 1.5vw, 5rem);
     text-align: center;
     background: #f8f9fa;
     border-radius: 10px;
@@ -42,16 +42,18 @@ p {
 }
 
 #linkuri a {
+    font-size: clamp(1rem, 1vw, 2rem);
+    margin-left: 15px; margin-right: 15px;
     color: black;
     text-decoration: none;
     padding: 10px;
-    margin-right: 10px;
     border-radius: 15px;
-    font-size: larger;
-    transition: background-color 0.3s ease; /* Add transition effect */
+    transition: background-color 5s ease;
+    transition: font-size 0.5s ease;
 }
 
 #linkuri a:hover {
     background-color: #007bff34;
     font-weight: 900;
+    font-size: clamp(1.25rem, 1.25vw, 7rem);
 }
