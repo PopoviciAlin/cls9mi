@@ -48,10 +48,11 @@ p {
     text-decoration: none;
     padding: 10px;
     border-radius: 15px;
-    transition: background-color 0.2s ease
+    transition: background-color 0.2s ease, font-size 0.2s ease;
 }
 
 #linkuri a:hover {
     background-color: #007bff4b;
     font-weight: 900;
+    font-size: clamp(1.5rem, 1vw, 2rem);
 }
