@@ -22,8 +22,9 @@ p {
 #linkuri {
     text-shadow: 5px 5px 5px #00000056;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 0
+    margin: 0;
 }
 
 #linkuri a {
@@ -43,19 +44,26 @@ p {
 }
 
 #favicon {
+    height: 50px;
     filter: drop-shadow(3px 3px 5px #00000050);
     display: flex;
     aspect-ratio: 1 / 1;
 }
 
+#favicon_img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
 /* TITLU PAGINA */
 #titlu {
     font-family: "Quicksand", 'Roboto', 'Oxygen';
-    font-size: clamp(0.65rem, 15vw, 7rem);
+    font-size: clamp(1rem, 15vw, 7rem);
     font-weight: 900;
     text-align: center;
     margin: 15px;
-    text-shadow: 5px 5px 15px #00000050;
+    text-shadow: 5px 5px 15px #00000077;
 }
 
 /* CONTINUT */
@@ -65,7 +73,7 @@ p {
     justify-content: center;
 
     font-family: "Quicksand", 'Roboto', 'Oxygen';
-    font-size: clamp(1.5rem, 1.5vw, 5rem);
+    font-size: clamp(1.25rem, 1.5vw, 2.5rem);
     text-align: center;
 
     background: #f8f9fa;
@@ -92,7 +100,7 @@ p {
     overflow: hidden;
     transition: 0.5s;
     margin: 0 2%;
-    filter: drop-shadow(10px 10px 15px #00000050);
+    filter: drop-shadow(10px 10px 10px #000000a9);
 }
   
 .box > #imagine_galerie {
@@ -115,6 +123,8 @@ p {
     height: 100%;
 }
 
+
+/* WEBSITE - MOBIL */
 @media screen and (max-width: 600px) {
     .continut {
         display: block;
@@ -134,6 +144,7 @@ p {
     }
 
     .box > #imagine_galerie {
+        filter: drop-shadow(10px 10px 10px #000000a9);
         position: static;
         top: auto;
         left: auto;
@@ -158,6 +169,6 @@ p {
 
     #linkuri a{
         transition: 0.5s;
-        margin: 0
+        margin: 0;
     }
 }
