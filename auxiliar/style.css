@@ -36,6 +36,7 @@ p {
 }
 
 #linkuri a:hover {
+    text-shadow: none;
     background-color: #007bff52;
     font-weight: 900;
 }
@@ -125,7 +126,7 @@ p {
         position: static;
         flex: initial;
         overflow: visible;
-        transition: none;
+        transition: 0.5s;
         margin: 30px;
         filter: none;
     }
