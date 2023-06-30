@@ -12,6 +12,10 @@ p {
     padding: 15px;
 }
 
+#theme-text {
+    transition: 0.5s;
+}
+
 /* NAVIGARE */
 #navigare {
     font-family: "Quicksand", 'Oxygen', system-ui;
@@ -92,6 +96,8 @@ p {
 }
 
 button {
+    margin: 0 !important;
+    padding: 0 !important;
     transition: 0.5s;
     justify-content: center;
     background-color: black;

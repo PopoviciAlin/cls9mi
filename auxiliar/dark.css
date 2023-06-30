@@ -1,4 +1,5 @@
 .custom-transition {
+    margin:0;
     transition: background-color 0.5s;
 }
 
@@ -11,6 +12,10 @@ body {
 p {
     margin: 0;
     padding: 15px;
+}
+
+#theme-text {
+    transition: 0.5s;
 }
 
 /* NAVIGARE */
@@ -95,6 +100,8 @@ p {
 }
 
 button {
+    margin: 0 !important;
+    padding: 0 !important;
     transition: 0.5s;
     justify-content: center;
     background-color: white;
