@@ -79,7 +79,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
+    align-items: center; /* Vertical centering */   
 
     font-family: "Quicksand", 'Oxygen', system-ui;
     font-size: clamp(1.3rem, 3vw, 2rem);
