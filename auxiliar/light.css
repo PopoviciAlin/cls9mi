@@ -78,6 +78,7 @@ p {
 
 /* CONTINUT */
 #continut {
+    transition: 0.5s;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Horizontal centering */
