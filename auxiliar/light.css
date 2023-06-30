@@ -92,6 +92,7 @@ p {
 }
 
 button {
+    transition: 0.5s;
     justify-content: center;
     background-color: black;
     width: clamp(1rem, 100vw, 7rem);

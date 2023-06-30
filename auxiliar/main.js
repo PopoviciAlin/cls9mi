@@ -19,7 +19,7 @@ function toggleTheme() {
     setTimeout(function() {
       const titleElement = document.getElementById('title');
       titleElement.classList.add('custom-transition');
-    }, 1000);
+    }, 100);
   }
   
   // Function to load the user preference from local storage
@@ -33,4 +33,6 @@ function toggleTheme() {
   // Load the user preference on page load
   loadTheme();
   
+  // Add event listener to the theme toggle button
+  document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
   
