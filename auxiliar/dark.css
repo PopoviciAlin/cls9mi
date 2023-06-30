@@ -1,5 +1,10 @@
+.custom-transition {
+    transition: background-color 0.5s;
+}
+
 body {
-    background-color: #e9ecef;
+    transition: color 0.5s;
+    background-color: black;
     margin: 0;
 }
 
@@ -10,10 +15,9 @@ p {
 
 /* NAVIGARE */
 #navigare {
-    transition: 0.5s;
-    font-family: "Quicksand", "Roboto", "Oxygen";
+    font-family: "Quicksand", 'Oxygen', system-ui;
     height: 50px;
-    background-color: #f8f9fa;
+    background-color: #212529;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -21,7 +25,7 @@ p {
 }
 
 #linkuri {
-    text-shadow: 5px 5px 5px #00000056;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,10 +33,9 @@ p {
 }
 
 #linkuri a {
-    transition: 0.5s;
+    color: white;
     font-size: clamp(1rem, 1vw, 3rem);
     margin: 0 15px;
-    color: black;
     text-decoration: none;
     padding: 10px;
     border-radius: 15px;
@@ -46,13 +49,14 @@ p {
 }
 
 #favicon {
+    transition: 0.5s;
     height: auto;
-    filter: drop-shadow(3px 3px 5px #00000050);
     display: flex;
     aspect-ratio: 1 / 1;
 }
 
 #favicon_img {
+    transition: 0.5s;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -60,29 +64,51 @@ p {
 
 /* TITLU PAGINA */
 #titlu {
-    font-family: "Quicksand", "Roboto", "Oxygen";
+    color: white;
+    font-family: "Quicksand", 'Oxygen', system-ui;
     font-size: clamp(1rem, 15vw, 7rem);
     font-weight: 900;
     text-align: center;
     margin: 15px;
-    text-shadow: 5px 5px 15px #00000077;
 }
 
 /* CONTINUT */
 #continut {
+    color: white;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
 
-    font-family: "Quicksand", "Roboto", "Oxygen";
+    font-family: "Quicksand", 'Oxygen', system-ui;
     font-size: clamp(1.3rem, 3vw, 2rem);
     text-align: center;
 
-    background: #f8f9fa;
+    background: #212529;
     border-radius: 10px;
 
     margin: 0 10vw 50px 10vw;
-    box-shadow: 10px 10px 15px 1px #00000050;
+
+    border: none;
+    height: max-content;
+}
+
+button {
+    transition: 0.5s;
+    justify-content: center;
+    background-color: white;
+    width: clamp(1rem, 100vw, 7rem);
+    aspect-ratio: 1;
+    margin: 0px 25px 25px 25px;
+
+    border: none;
+    border-radius: clamp(1rem, 100vw, 7rem);
+    
+}
+
+p a {
+    color: #007bff;
 }
 
 /* GALERIE */
@@ -103,6 +129,7 @@ p {
     transition: 0.5s;
     margin: 0 2%;
     filter: drop-shadow(10px 10px 10px #000000a9);
+    transform: translateZ(0)
 }
   
 .box > #imagine_galerie {
@@ -128,6 +155,10 @@ p {
 
 /* WEBSITE - MOBIL */
 @media screen and (max-width: 600px) {
+    #navigare {
+        height: 35px;
+    }
+
     .continut {
         display: block;
         width: auto;
@@ -142,11 +173,10 @@ p {
         overflow: visible;
         transition: 0.5s;
         margin: 20px;
-        filter: none;
     }
 
     .box > #imagine_galerie {
-        filter: drop-shadow(10px 10px 10px #000000a9);
+        filter: none;
         position: static;
         top: auto;
         left: auto;
