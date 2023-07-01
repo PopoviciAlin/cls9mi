@@ -14,10 +14,6 @@ p {
     padding: 15px;
 }
 
-#theme-text {
-    transition: 0.5s;
-}
-
 /* NAVIGARE */
 #navigare {
     font-family: "Quicksand", 'Oxygen', system-ui;
@@ -53,13 +49,6 @@ p {
     font-weight: 900;
 }
 
-#favicon {
-    transition: 0.5s;
-    height: auto;
-    display: flex;
-    aspect-ratio: 1 / 1;
-}
-
 #favicon_img {
     transition: 0.5s;
     max-width: 100%;
@@ -79,7 +68,6 @@ p {
 
 /* CONTINUT */
 #continut {
-    transition: 0.5s;
     color: white;
 
     display: flex;
@@ -113,10 +101,6 @@ button {
     border: none;
     border-radius: clamp(1rem, 100vw, 7rem);
     
-}
-
-p a {
-    color: #007bff;
 }
 
 /* GALERIE */
@@ -179,7 +163,6 @@ p a {
         position: static;
         flex: initial;
         overflow: visible;
-        transition: 0.5s;
         margin: 20px;
     }
 

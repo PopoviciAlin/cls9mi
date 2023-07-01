@@ -12,12 +12,9 @@ p {
     padding: 15px;
 }
 
-#theme-text {
-    transition: 0.5s;
-}
-
 /* NAVIGARE */
 #navigare {
+    transition: 0.5s;
     font-family: "Quicksand", 'Oxygen', system-ui;
     height: 50px;
     background-color: #f8f9fa;
@@ -88,7 +85,7 @@ p {
     font-size: clamp(1.3rem, 3vw, 2rem);
     text-align: center;
 
-    background: #f8f9fa;
+    background-color: #f8f9fa;
     border-radius: 10px;
 
     margin: 0 10vw 50px 10vw;
