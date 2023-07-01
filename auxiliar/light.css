@@ -65,6 +65,7 @@ p {
 
 /* TITLU PAGINA */
 #titlu {
+    transition: all 0.1s !important;
     font-family: "Quicksand", 'Oxygen', system-ui;
     font-size: clamp(1rem, 15vw, 7rem);
     font-weight: 900;
@@ -75,11 +76,10 @@ p {
 
 /* CONTINUT */
 #continut {
-    transition: 0.5s;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */   
+    justify-content: center;
+    align-items: center;
 
     font-family: "Quicksand", 'Oxygen', system-ui;
     font-size: clamp(1.3rem, 3vw, 2rem);
@@ -90,9 +90,6 @@ p {
 
     margin: 0 10vw 50px 10vw;
     box-shadow: 10px 10px 15px 1px #00000050;
-
-    border: none;
-    height: max-content;
 }
 
 button {

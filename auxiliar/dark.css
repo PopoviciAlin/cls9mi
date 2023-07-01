@@ -16,13 +16,14 @@ p {
 
 /* NAVIGARE */
 #navigare {
+    transition: all 0.5s;
     font-family: "Quicksand", 'Oxygen', system-ui;
     height: 50px;
     background-color: #212529;
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    box-shadow: 0px 10px 25px 10px #007bff6b;
+    box-shadow: 0px 10px 25px 10px #007bffb4;
 }
 
 #linkuri {
@@ -45,7 +46,7 @@ p {
 
 #linkuri a:hover {
     text-shadow: none;
-    background-color: #007bff52;
+    background-color: #007bff8f;
     font-weight: 900;
 }
 
@@ -58,6 +59,7 @@ p {
 
 /* TITLU PAGINA */
 #titlu {
+    transition: all 0.5s;
     color: white;
     font-family: "Quicksand", 'Oxygen', system-ui;
     font-size: clamp(1rem, 15vw, 7rem);
@@ -68,12 +70,13 @@ p {
 
 /* CONTINUT */
 #continut {
+    transition: all 0.5s;
     color: white;
 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
+    justify-content: center;
+    align-items: center;
 
     font-family: "Quicksand", 'Oxygen', system-ui;
     font-size: clamp(1.3rem, 3vw, 2rem);
@@ -83,9 +86,6 @@ p {
     border-radius: 10px;
 
     margin: 0 10vw 50px 10vw;
-
-    border: none;
-    height: max-content;
 }
 
 button {
@@ -191,7 +191,7 @@ button {
     }
 
     #linkuri a{
-        transition: 0.5s;
+        transition: color 0.5s;
         margin: 0 5px;
     }
 }
