@@ -1,3 +1,10 @@
+/*
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+*/
+
 .custom-transition {
     margin:0;
     transition: background-color 0.5s;
@@ -17,6 +24,12 @@ p {
 
 p a {
     color: #007bff;
+}
+
+#theme-text {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin: 7px;
+    padding: 0;
 }
 
 /* NAVIGARE */
@@ -92,23 +105,22 @@ p a {
     border-radius: 10px;
 
     margin: 0 10vw 50px 10vw;
+    padding: 0;
 
     box-shadow: 5px 5px 10px gray;
 }
 
 button {
-    margin: 0 !important;
+    margin: 15px !important;
     padding: 0 !important;
     transition: 0.5s;
     justify-content: center;
     background-color: black;
     width: clamp(1rem, 100vw, 7rem);
     aspect-ratio: 1;
-    margin: 0px 25px 25px 25px;
 
     border: none;
     border-radius: clamp(1rem, 100vw, 7rem);
-    
 }
 
 /* GALERIE */
@@ -172,7 +184,7 @@ button {
         position: static;
         flex: initial;
         overflow: visible;
-        margin: 20px;
+        margin: 15px;
     }
 
     .box > #imagine_galerie {
@@ -200,7 +212,6 @@ button {
     }
 
     #linkuri a{
-        transition: 0.5s;
         margin: 0 5px;
     }
 }

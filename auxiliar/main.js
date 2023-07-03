@@ -21,10 +21,14 @@ function applyTheme(theme) {
 
         // Update the text within the paragraph based on the selected theme
         const themeText = document.getElementById('theme-text');
+        const otherText = document.getElementById('descriere_concisa');
+        
         if (theme === 'light') {
-            themeText.textContent = 'Întunecată';
+            themeText.textContent = 'Alege latura întunecată';
+            otherText.textContent = 'Întunericul preia controlul: website-ul se transformă în modul întunecat, aducând o atmosferă misterioasă și elegantă.';
         } else {
-            themeText.textContent = 'Luminoasă';
+            themeText.textContent = 'Alege latura luminoasă';
+            otherText.textContent = 'Lumina strălucește: website-ul se schimbă în modul luminos, creând o atmosferă vibrantă și energică.';
         }
     }, 100);
 }

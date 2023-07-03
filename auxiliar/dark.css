@@ -60,6 +60,12 @@ p a {
     object-fit: contain;
 }
 
+#theme-text {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin: 7px;
+    padding: 0;
+}
+
 /* TITLU PAGINA */
 #titlu {
     transition: color 0.5s;
@@ -93,18 +99,16 @@ p a {
 }
 
 button {
-    margin: 0 !important;
+    margin: 15px !important;
     padding: 0 !important;
     transition: 0.5s;
     justify-content: center;
     background-color: white;
     width: clamp(1rem, 100vw, 7rem);
     aspect-ratio: 1;
-    margin: 0px 25px 25px 25px;
 
     border: none;
     border-radius: clamp(1rem, 100vw, 7rem);
-    
 }
 
 /* GALERIE */
@@ -196,7 +200,6 @@ button {
     }
 
     #linkuri a{
-        transition: 0.5s;
         margin: 0 5px;
     }
 }
