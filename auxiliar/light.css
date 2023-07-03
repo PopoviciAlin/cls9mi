@@ -1,32 +1,37 @@
 .custom-transition {
+    margin:0;
     transition: background-color 0.5s;
 }
 
 body {
-    background-color: #e9ecef;
+    transition: color 0.5s;
+    background-color: white;
     margin: 0;
 }
 
 p {
     margin: 0;
     padding: 15px;
+    transition: color 0.5s;
+}
+
+p a {
+    color: #007bff;
 }
 
 /* NAVIGARE */
 #navigare {
-    transition: 0.5s;
-    font-family: "Quicksand", 'Oxygen', system-ui;
+    transition: all 0.5s;
+    font-family: "Quicksand", system-ui;
     height: 50px;
-    background-color: #f8f9fa;
+    background-color: #e9ecef;
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    box-shadow: 0px 10px 25px 10px #007bff6b;
+    box-shadow: 0px 10px 25px 10px #007bffb4;
 }
 
 #linkuri {
-    transition: 0.5s;
-    text-shadow: 5px 5px 5px #00000056;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,30 +39,23 @@ p {
 }
 
 #linkuri a {
-    transition: 0.5s;
+    color: black;
     font-size: clamp(1rem, 1vw, 3rem);
     margin: 0 15px;
-    color: black;
     text-decoration: none;
     padding: 10px;
     border-radius: 15px;
+    transition: all 0.2s;
+    transition-property: font-size, color, background-color;
 }
 
 #linkuri a:hover {
     text-shadow: none;
-    background-color: #007bff52;
+    background-color: #007bff8f;
     font-weight: 900;
 }
 
-#favicon {
-    height: auto;
-    filter: drop-shadow(3px 3px 5px #00000050);
-    display: flex;
-    aspect-ratio: 1 / 1;
-}
-
 #favicon_img {
-    transition: 0.5s;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -65,32 +63,37 @@ p {
 
 /* TITLU PAGINA */
 #titlu {
-    transition: all 0.1s !important;
-    font-family: "Quicksand", 'Oxygen', system-ui;
+    transition: all 0.5s;
+    transition-property: color;
+    color: black;
+    font-family: "Quicksand", system-ui;
     font-size: clamp(1rem, 15vw, 7rem);
     font-weight: 900;
     text-align: center;
     margin: 15px;
-    text-shadow: 5px 5px 15px #00000077;
 }
 
 /* CONTINUT */
 #continut {
     transition: all 0.5s;
+    transition-property: box-shadow, background-color;
+    color: black;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    font-family: "Quicksand", 'Oxygen', system-ui;
+    font-family: "Quicksand", system-ui;
     font-size: clamp(1.3rem, 3vw, 2rem);
     text-align: center;
 
-    background-color: #f8f9fa;
+    background-color: #e9ecef;
     border-radius: 10px;
 
     margin: 0 10vw 50px 10vw;
-    box-shadow: 10px 10px 15px 1px #00000050;
+
+    box-shadow: 5px 5px 10px gray;
 }
 
 button {
@@ -106,10 +109,6 @@ button {
     border: none;
     border-radius: clamp(1rem, 100vw, 7rem);
     
-}
-
-p a {
-    color: #007bff;
 }
 
 /* GALERIE */
@@ -140,7 +139,7 @@ p a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: .5s;
+    transition: 0.5s;
 }
   
 .box:hover {
@@ -155,8 +154,9 @@ p a {
 
 
 /* WEBSITE - MOBIL */
-@media screen and (max-width: 600px) {
-    #navigare, #navigare1 {
+@media screen and (max-width: 650px) {
+    #navigare {
+        transition: all 0.5;
         height: 35px;
     }
 
@@ -172,11 +172,7 @@ p a {
         position: static;
         flex: initial;
         overflow: visible;
-        transition: 0.5s;
         margin: 20px;
-        filter: none;
-        filter: drop-shadow(10px 10px 10px #000000a9);
-        transform: translateZ(0)
     }
 
     .box > #imagine_galerie {
