@@ -5,7 +5,7 @@
 
 body {
     transition: color 0.5s;
-    background-color: white;
+    background-color: #e9ecef;
     margin: 0;
 }
 
@@ -24,11 +24,11 @@ p a {
     transition: all 0.5s;
     font-family: "Quicksand", system-ui;
     height: 50px;
-    background-color: #e9ecef;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    box-shadow: 0px 10px 25px 10px #007bffb4;
+    box-shadow: 0px 10px 25px 10px #007bff85;
 }
 
 #linkuri {
@@ -88,7 +88,7 @@ p a {
     font-size: clamp(1.3rem, 3vw, 2rem);
     text-align: center;
 
-    background-color: #e9ecef;
+    background-color: white;
     border-radius: 10px;
 
     margin: 0 10vw 50px 10vw;
