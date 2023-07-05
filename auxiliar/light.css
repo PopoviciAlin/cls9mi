@@ -52,6 +52,7 @@ p a {
 }
 
 #linkuri a {
+    text-shadow: 5px 5px 10px gray;
     color: black;
     font-size: clamp(1rem, 1vw, 3rem);
     margin: 0 15px;
@@ -76,6 +77,7 @@ p a {
 
 /* TITLU PAGINA */
 #titlu {
+    text-shadow: 5px 5px 10px gray;
     transition: all 0.5s;
     transition-property: color;
     color: black;
